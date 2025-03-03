@@ -45,9 +45,8 @@ def is_transaction_successful(money_received, drink_cost):
         cust_change = round(money_received - drink_cost, 2)
         print(f"\nDispensing your change: ${cust_change}")
         return True
-    else:
-        print("Not enough, refunding payment.")
-        return False
+    print("Not enough, refunding payment.")
+    return False
 
 def make_coffee(drink_name, order_ingredients):
     """deduct the machine's ingredients based on the order"""
